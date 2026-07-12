@@ -11,7 +11,7 @@ This project demonstrates the fundamentals of creating a backend server with two
 | Method | Route | Description |
 |--------|-------|-------------|
 | GET | `/` | Returns a welcome message |
-| GET | `/health` | Returns the server health status |
+| GET | `/about` | Returns the authors information |
 
 ---
 
@@ -71,15 +71,16 @@ http://localhost:3000
 
 ```json
 {
-  "message": "Hello from my FlyRank backend!"
+  "message": "Hello from FlyRank!"
 }
 ```
 
-### `GET /health`
+### `GET /about`
 
 ```json
 {
-  "status": "ok"
+  "name" : 'Mariya',
+  "role" : 'Backend AI Engineering Intern'
 }
 ```
 
